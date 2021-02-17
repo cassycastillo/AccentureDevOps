@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+        stages{
+            stage('Code'){
+                steps{
+                    echo 'This is a code section'
+                }
+            }
+            stage('Build'){
+                steps{
+                    echo 'This is build section'
+                }
+            }
+            stage('Test'){
+                steps{
+                    echo 'This is test section'
+                }
+            }
+            stage('Deploy'){
+                steps{
+                    echo 'This is deploy section'
+                }
+            }
+        }
+}
